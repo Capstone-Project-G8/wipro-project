@@ -1,79 +1,43 @@
+------------------------ShopForHome-----------------
+### For Product details and admin user details
 
+---To get the products and to login as a admin you need to upload the product.json file 
+   and users.json file in your mongodb 
 
-![](./screen-caps/01Homepage.jpeg)
 Admin Login
-
-```
+````
 {
-    "email": "admin@gmail.com",
-    "password": "123456"
+    "email": "jayashree.dasari2000@gmail.com",
+    "password": "123456789"
 }
 ```
-
 User Login
 
 ```
 {
-    "email": "user@gmail.com",
-    "password": "123456"
+    "email": "ravi@gmail.com",
+    "password": "123456789"
 }
 ```
+--now Install dependencies 
 
-(Stripe) Card Payment Details 
+navigate to frontend 
+-->cd frontend
+give---> npm install
 
-```
-4000 0027 6000 3184
-Any future Date
-Any three digit
-```
+open a new terminal 
+navigate to backend
+cd backend
+give---> npm install
 
-## Usage
+To Run the Application
 
-- Create a .env file inside backend/config.
+---for server
+...cd backend -> npm run dev
 
-- Copy the following lines and specify appropriate values.
+---for running client
+...cd frontend -> npm start
 
-```
-PORT = 4000
-NODE_ENV = DEVELOPMENT
-DB_URI = mongodb+srv://<username>:<password>@mern.apqfp.mongodb.net/<collection-name>?retryWrites=true&
-JWT_SECRET =
-JWT_EXPIRES_TIME = 7d
-COOKIE_EXPIRES_TIME = 7
+## client running on  http://localhost:8000/
 
-CLOUDINARY_CLOUD_NAME =
-CLOUDINARY_API_KEY =
-CLOUDINARY_API_SECRET =
-
-STRIPE_SECRET_KEY =
-STRIPE_API_KEY =
-
-SMTP_HOST = smtp.mailtrap.io
-SMTP_PORT = 2525
-SMTP_EMAIL =
-SMTP_PASSWORD =
-SMTP_FROM_EMAIL = noreply@shopit.com
-SMTP_FROM_NAME = ShopIT
-```
-
-Install dependencies
-
-```bash
-npm install
-cd frontend
-npm install
-```
-
-### Run App
-
-For running Server
-
-```bash
-npm run dev
-```
-
-For running Client
-
-```bash
-npm start
-```
+## server running on port 4000
